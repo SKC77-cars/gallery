@@ -1,7 +1,49 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+<head>
+  <title>Car Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      padding: 20px 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
 <body>
-<h1>My Car Gallery</h1>
-<p>Coming soon</p>
+  <h1>My Car Gallery</h1>
+
+  <div class="gallery">
+    <img src="IMG_3125">
+    <img src="IMG_8514">
+    <img src="Екранна снимка 2025-02-20 194254">
+  </div>
 </body>
 </html>
+
+
